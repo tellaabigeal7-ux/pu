@@ -16,46 +16,82 @@
 .border {
   position: relative;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
+  gap: 32px;
   background-color: rgb(134, 148, 239, 1);
   align-items: center;
 }
 
 .para {
   font-size: 20px;
-  padding: 1.5rem;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  padding-block: 20px;
+  font-weight: 500;
+  font-family: outfit, sans-serif;
   color: white;
 }
 
 .span {
   position: relative;
-  margin: 0.2rem;
   display: flex;
   /* border: 1px solid white; */
-  padding: 1%;
+  cursor: pointer;
   color: white;
   font-size: 1.5rem;
+}
+
+.spa-btn {
+  justify-content: center;
 }
 
 .spa {
   position: relative;
   display: flex;
   width: 11rem;
-  color: aliceblue;
-  padding-left: 1rem;
-  height: 2.4rem;
+  font-family: outfit, sans-serif;
+  color: white;
+  padding: 0.5rem;
   align-items: center;
-  font-size: 1.5rem;
+  background-color: transparent;
+  font-size: 1.3rem;
+  justify-content: center;
   border: 1px solid rgb(247, 242, 242);
   border-radius: 60px;
+  display: flex;
+  gap: 10px;
+  flex-direction: row;
+  align-content: center;
 }
+
+.img-stroke {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+}
+/* .nav {
+  background-color: white;
+  z-index: 99;
+  display: flex;
+  opacity: 0.95;
+  width: min(100%, 350px);
+  align-items: center;
+  justify-content: space-between;
+  padding-inline: 30px;
+  padding-block: 10px;
+  margin-block: 10px;
+  /* border: 1px solid whitesmoke; *
+  box-shadow: 20px 0px 50px 0 #857f7f41;
+  border-radius: 500px;
+  width: 1550px;
+  margin-left: 1rem;
+} */
 
 .nav {
   background-color: white;
   opacity: 0.95;
   z-index: 99;
   display: flex;
+  opacity: 0.95;
+  width: min(100%, 97%);
   align-items: center;
   justify-content: space-between;
   padding-inline: 40px;
@@ -90,10 +126,40 @@ li a {
 }
 
 .nav-links {
+  align-items: center;
   display: flex;
   gap: 50px;
 }
 
+.drop {
+  font-size: 25px;
+  text-align: center;
+  align-items: center;
+}
+
+.user-container {
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+}
+
+.resource {
+  background-color: transparent;
+  border: none;
+  display: flex;
+  align-items: center;
+}
+
+.drop-head {
+  align-items: center;
+}
+
+.sign-stroke {
+  align-content: center;
+  padding-inline: 10px;
+  display: flex;
+}
 .btn-login {
   color: #000000;
   border: #fff;
@@ -101,17 +167,19 @@ li a {
   padding: 1rem;
   background-color: white;
   font-size: 18px;
-  border-radius: 600px;
+  cursor: pointer;
   position: relative;
 }
 
 .btn-sign-up {
   color: rgb(252, 251, 251);
   border: #fff;
-  margin-right: 3rem;
+  display: flex;
   font-size: 17px;
-  padding: 0.8rem;
-  background-color: rgb(14, 202, 61);
+  cursor: pointer;
+  padding-inline: 25px;
+  padding-block: 15px;
+  background-color: rgb(0, 200, 114);
   border-radius: 600px;
   position: relative;
 }
@@ -120,32 +188,72 @@ li a {
   display: flex;
   flex-direction: row;
   margin-block: 250px;
-  margin-inline: 100px;
-  gap: 10px;
-  margin-bottom: 3.5rem;
+  margin-inline: 70px;
+  padding-inline: 30px;
+  gap: 80px;
+  margin-bottom: 4rem;
   font-size: 1.8rem;
   justify-content: space-between;
 }
 
 .access-head {
-  font-size: 64px;
+  font-size: 52px;
+  font-family: "Fraunces", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  width: 120%;
+  font-variation-settings: "SOFT" 0, "WONK" 0;
 }
 
 .access-para {
-  font-size: 22px;
+  font-size: 17px;
+  font-family: oufit, sans-serif;
+  line-height: 30px;
+  color: #000000;
+  width: 97%;
+  opacity: 0.5;
+  font-weight: 600;
+}
+
+.btn-con {
+  align-items: center;
+  display: flex;
+  margin-block: 30px;
+  flex-direction: row;
+  gap: 20px;
 }
 
 .startbtn {
-  background-color: rgb(14, 202, 61);
+  background-color: rgb(0, 200, 114);
   border-radius: 60px;
   padding: 1rem;
+  position: relative;
+  gap: 10px;
+  display: flex;
+  color: white;
+  /* width: 160px; */
+  cursor: pointer;
+  /* margin-top: 2rem; */
   font-size: 17px;
   border: none;
+}
+
+.start-stroke {
+  align-content: center;
+  /* padding-inline: 10px; */
+  gap: 10px;
+  display: flex;
+}
+
+.btn-get {
+  display: flex;
+  align-content: center;
 }
 
 .learnbtn {
   background-color: white;
   color: black;
+  cursor: pointer;
   padding: 1rem;
   font-size: 17px;
   border-radius: 60px;
@@ -178,6 +286,7 @@ li a {
   font-size: 17px;
   background-color: green;
   padding: 0.8rem;
+  cursor: pointer;
   border-radius: 600px;
   position: relative;
 }
@@ -197,55 +306,85 @@ li a {
   position: relative;
   justify-content: space-between;
   align-items: center;
-  padding-left: 2rem;
+  padding-inline: 40px;
   display: flex;
 }
 
 .hsa-para {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
+  font-family: outfit, sans-serif;
+  color: #252525;
+  width: 60%;
+  margin-block: 2rem;
 }
 
-.hsa-wallet {
-  font-size: 1.3rem;
-}
-
-.image-container {
-  max-width: 100%;
+.hsa-heading {
+  font-family: "Fraunces", serif;
+  font-size: 48px;
+  margin-bottom: 1rem;
 }
 
 .hsa-tags {
   display: grid;
-  margin-top: 2rem;
   margin-left: 0.8rem;
   gap: 20px;
 }
 
 .hsa-wallet {
   display: flex;
+  align-items: start;
 }
 
 .wallet-content {
   margin-left: 1.2rem;
 }
+.wallet-head {
+  font-size: 19px;
+  opacity: 0.8;
+}
+.wallet-head2 {
+  font-size: 19px;
+  font-family: outfit, sans-serif;
+  opacity: 0.8;
+}
 
 .wallet-para {
-  margin-top: 0.8rem;
+  color: #333;
+  font-size: 17px;
+  font-family: outfit, sans-serif;
+  width: 80%;
 }
 
 .saving-container {
   color: #ffffff;
   border: #fff;
   margin: 3rem;
-  padding: 1rem;
-  background-color: rgb(116, 93, 180);
+  padding: 1rem 3rem 1rem 3rem;
+  background-color: rgb(104, 118, 209);
   font-size: 18px;
+  /* width: 170px; */
+  cursor: pointer;
+  /* height: 55px; */
   border-radius: 600px;
+  gap: 10px;
+  display: flex;
+  align-content: center;
+  flex-direction: row;
   position: relative;
+}
+
+.save-stroke {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  flex-direction: row;
 }
 
 .clinic-container {
   display: flex;
   justify-content: space-between;
+  margin-left: 2rem;
+  margin-top: 3rem;
   align-items: end;
 }
 
@@ -259,45 +398,105 @@ li a {
 .care-heading {
   font-size: 48px;
   line-height: 56px;
+  font-family: "Fraunces", serif;
   color: #111;
 }
 
 .care-para {
-  font-size: 24px;
+  font-size: 19px;
   margin-top: 4px;
+  font-family: outfit, sans-serif;
   margin-bottom: 2px;
-  width: 50%;
+  width: 45.5%;
   color: #333333f6;
 }
 
 .btn-getstarted {
   color: #ffffff;
   border: #fff;
-  margin-left: 3rem;
+  /* margin-left: 3rem; */
   margin-right: 3rem;
-  padding: 0.8rem;
+  padding: 1rem 1rem;
   background-color: rgb(35, 197, 102);
   font-size: 18px;
-  border-radius: 600px;
+  border-radius: 60px;
   position: relative;
-  max-width: 100%;
+  display: flex;
+  gap: 10px;
+  align-content: center;
+  flex-direction: row;
+  cursor: pointer;
+  /* width: 167px;
+  height: 55px; */
+}
+
+.get-stroke {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  flex-direction: row;
 }
 
 .talk-content {
-  font-size: 2.1rem;
+  font-size: 2.2rem;
   color: #413f3f;
+  font-weight: 600;
+  font-family: outfit, sans-serif;
+}
+
+.add {
+  font-family: outfit, sans-serif;
+  font-size: 16px;
+  width: 103%;
+  margin-top: 20px;
+  margin-top: 1rem;
+}
+.add2 {
+  width: 128%;
+  font-family: outfit, sans-serif;
+  font-size: 16px;
+  margin-top: 20px;
+}
+.add3 {
+  width: 100%;
+  font-family: outfit, sans-serif;
+  font-size: 16px;
+  margin-top: 20px;
+}
+.add4 {
+  width: 110%;
+  font-family: outfit, sans-serif;
+  font-size: 16px;
+  margin-top: 20px;
+}
+.add5 {
+  width: 110%;
+  font-family: outfit, sans-serif;
+  font-size: 16px;
+  margin-top: 20px;
+}
+.add6 {
+  width: 120%;
+  font-family: outfit, sans-serif;
+  font-size: 16px;
+  margin-top: 20px;
 }
 
 .talk-paragragh {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
+  width: 120%;
+  margin-bottom: 20px;
   color: #626262;
+  font-family: outfit, sans-serif;
 }
 
 .bag-heading {
-  padding: 1.5rem;
   display: flex;
+  width: 100%;
+  padding-block: 30px;
+  padding-inline: 26px;
   flex-direction: row;
-  gap: 30px;
+  gap: 18px;
 }
 
 .talk-image {
@@ -322,23 +521,43 @@ li a {
 }
 
 .talk-con {
-  font-size: 40px;
-  width: 100%;
-  align-content: flex-start;
+  font-size: 38px;
+  align-items: center;
+  font-family: outfit, sans-serif;
+  color: #333;
+  width: 200%;
+  font-weight: 600;
+}
+.talk-con2 {
+  font-size: 37px;
+  align-items: center;
+  font-family: outfit, sans-serif;
+  color: #333;
+}
+
+.talk-paragragh2 {
+  width: 80%;
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: #626262;
+  font-family: outfit, sans-serif;
 }
 
 .text-cont {
-  align-content: flex-end;
-  width: 70%;
+  width: 60%;
 }
 
 .less-content {
   background-color: #cfe2ff;
   border-radius: 30px;
   height: 636px;
-  width: 50%;
+  overflow: hidden;
+  width: 100%;
+  flex-direction: column;
+  padding: 64px;
   position: relative;
-  align-content: flex-end;
+  align-items: flex-end;
+  display: flex;
 }
 
 .less-image {
@@ -347,6 +566,9 @@ li a {
 
 .less-radius {
   border-radius: 0 3rem 0 1rem;
+  position: absolute;
+  left: 0;
+  bottom: 0;
 }
 
 .bag-radius {
@@ -361,6 +583,7 @@ li a {
   background-color: #e4cfff;
   border-radius: 30px;
   align-content: end;
+  width: 80%;
   height: 636px;
 }
 
@@ -378,8 +601,9 @@ li a {
 }
 
 .text-content {
-  width: 50%;
+  width: 60%;
   padding-left: 4.5rem;
+  align-content: end;
   padding-top: 1rem;
 }
 
@@ -419,8 +643,8 @@ li a {
 }
 
 .drug-heading {
-  margin-top: 4rem;
-  gap: 30px;
+  gap: 18px;
+  padding-inline: 26px;
   width: 100%;
   display: flex;
 }
@@ -438,22 +662,19 @@ li a {
 }
 
 .grid {
-  font-size: 19px;
-  width: 80%;
   color: #626262;
-  margin: auto;
-  margin-top: 4rem;
+  margin-top: 170px;
   margin-bottom: 4rem;
+  padding-inline: 60px;
 }
 
 .palete-container,
 .speak-content,
 .diagnostic-container {
-  margin-bottom: 6px;
+  margin-bottom: 120px;
   display: flex;
-  width: 50%;
   font-family: serif;
-  padding-inline-end: 5rem;
+  padding-inline-end: 8rem;
   flex-flow: column;
   text-align: left;
 }
@@ -464,10 +685,16 @@ li a {
   margin-bottom: 6px;
   display: flex;
   padding-bottom: 3rem;
-  width: 50%;
   padding-inline-end: 5rem;
   flex-flow: column;
   text-align: left;
+}
+
+.addhead {
+  font-family: outfit, sans-serif;
+  color: #000;
+  font-weight: 500;
+  margin-top: 15px;
 }
 
 .psc-container,
@@ -503,11 +730,23 @@ li a {
   border: #fff;
   margin-right: 3rem;
   padding: 0.95rem;
+  cursor: pointer;
   background-color: rgb(104, 117, 201);
   font-size: 18px;
   margin-left: 3rem;
+  gap: 10px;
+  display: flex;
+  margin-bottom: 200px;
+  align-content: center;
+  flex-direction: row;
   border-radius: 600px;
   position: relative;
+}
+
+.stroke {
+  display: flex;
+  align-content: center;
+  flex-direction: row;
 }
 
 .swiper-para {
@@ -524,6 +763,7 @@ li a {
   /* padding: 0; */
   /* z-index: 1; */
   display: flex;
+  margin-bottom: 20px;
 }
 
 .swiper-wrapper {
@@ -558,15 +798,32 @@ li a {
 
 .flex-con {
   display: flex;
+  margin-left: 100px;
 }
+
+/* .coin-img {
+  padding-inline-end: 100px;
+}
+.pig-img {
+  padding-inline-end: 100px;
+} */
 
 .save-content {
   display: grid;
-  height: 600px;
+  height: 800px;
   align-items: center;
+  padding-block: 100px;
+  gap: 50px;
   background-image: url("../HTML/LinesBg.png");
   background-color: rgb(116, 116, 213);
   background-size: cover;
+  margin-bottom: 80px;
+}
+
+.root {
+  display: flex;
+  justify-content: space-evenly;
+  padding-inline: 70px;
 }
 
 .swiper {
@@ -771,6 +1028,8 @@ li a {
   width: 431px;
   animation: scroll 1000ms linear infinite;
   animation-delay: 1.5s;
+  overflow: hidden;
+  white-space: wrap;
   animation-timing-function: 1s;
 }
 
@@ -863,7 +1122,7 @@ li a {
 
 .section {
   display: flex;
-  background-color: #7b61ff;
+  background-color: rgb(141 106 222);
   justify-content: space-between;
   align-items: center;
   border-radius: 16px;
@@ -881,6 +1140,7 @@ li a {
 .title {
   font-size: 70px;
   color: white;
+  font-family: "fraunces";
   width: 200%;
 }
 
@@ -894,15 +1154,38 @@ li a {
   gap: 30px;
 }
 
+.action {
+  display: flex;
+  gap: 15px;
+  margin-top: 2rem;
+}
+
 .get-btn {
   color: #000;
-  border: #fff;
-  padding: 1rem;
-  background-color: whitesmoke;
-  font-size: 15px;
+  padding: 1.1rem;
+  background-color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-size: 16px;
   border-radius: 10px 10px 10px 10px;
-  width: 45%;
-  border: 1px solid #000;
+  width: 38%;
+  height: 68px;
+  cursor: pointer;
+  font-weight: 600;
+  border: 2px solid #000;
+}
+
+.get-btn:hover {
+  background-color: rgb(218, 218, 218);
+  transition: 2s;
+}
+
+.get-btn a {
+  text-decoration: none;
+  color: #000;
+}
+
+.humans {
+  font-weight: 700;
 }
 
 .lines {
@@ -912,14 +1195,9 @@ li a {
   z-index: 0;
 }
 
-.action {
-  display: flex;
-  gap: 15px;
-  margin-top: 2rem;
-}
-
 .trust-text {
   align-items: center;
+  display: grid;
   text-align: center;
   color: white;
 }
@@ -931,11 +1209,39 @@ li a {
 }
 
 .last-footer {
+  display: block;
+  position: fixed;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  border-radius: 600px;
+  padding-inline: 0.2rem;
+  border: 1px solid #5c5c5c;
+  opacity: 99;
   bottom: 0;
   z-index: 2;
   right: 0;
-  position: fixed;
+  max-width: 100%;
+  cursor: pointer;
+  height: auto;
+  animation-name: grow-animation;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate; /* To grow and then shrink */
 }
+
+@keyframes grow-animation {
+  from {
+    transform: scale(1); /* Original size */
+  }
+  to {
+    transform: scale(1.3);
+  }
+}
+
+.last-p {
+  position: relative;
+}
+
 .footer-con {
   display: flex;
   margin-top: 4rem;
@@ -972,6 +1278,9 @@ li a {
 
 .center-you {
   justify-content: center;
+  font-family: outfit, sans-serif;
+  width: 100%;
+  color: #626262;
 }
 
 .input-head {
@@ -1008,6 +1317,7 @@ li a {
 .join-btn {
   height: 40px;
   width: 110px;
+  cursor: pointer;
   background-color: white;
   border-radius: 10px 10px 0 0;
   border: none;
