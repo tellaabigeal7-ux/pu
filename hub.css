@@ -168,8 +168,121 @@ li a {
 }
 
 .hub {
-  margin-inline: 200px;
-  background-color: firebrick;
-  margin-top: 800px;
+  margin-top: 50px;
+  width: 50%;
+}
+
+.btn-getstarted {
+  background-color: rgb(104, 118, 209);
+  border-radius: 60px;
+  padding: 1rem;
+  position: relative;
+  gap: 10px;
+  display: flex;
+  color: white;
+  padding-inline: 40px;
+  /* width: 160px; */
+  cursor: pointer;
+  /* margin-top: 2rem; */
+  font-size: 17px;
+  border: none;
+}
+
+.flex {
+  display: flex;
+  margin-inline: 80px;
+  gap: 70px;
+}
+
+.hub-p {
+  display: flex;
+  background-color: #f4f4f4;
+  border-radius: 50px;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  padding-block: 5px;
+  gap: 10px;
+  font-size: 18px;
+  width: 250px;
+  color: #111;
+}
+
+.hub-head {
+  font-size: 60px;
+  font-weight: 800;
+  font-family: "fraunces";
+  width: 110%;
   color: #000;
+}
+
+.hub2 {
+  font-size: 18px;
+  color: #333;
+  font-family: outfit, sans-serif;
+  opacity: 0.6;
+  text-align: start;
+  width: 77%;
+  margin-block: 10px;
+  line-height: 30px;
+}
+.swiper {
+  position: relative;
+  display: flex;
+  flex-flow: row;
+}
+.swiper-wrapper {
+  cursor: grab;
+  margin-top: 3rem;
+  gap: 41px;
+  position: relative;
+  /* overflow: auto; */
+  /* z-index: 1; */
+  animation: slide 7000ms linear infinite;
+  display: flex;
+  /* box-sizing: content-box; */
+}
+
+.swipe-slide {
+  height: auto;
+  flex-shrink: 0;
+  position: relative;
+  display: block;
+  width: 162.824px;
+  margin-right: 20px;
+}
+
+@keyframes slide {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-100%, 0);
+  }
+}
+.swiper {
+  position: relative;
+  overflow: hidden;
+  /* list-style: none; */
+  white-space: nowrap;
+  gap: 20px;
+  /* padding: 0; */
+  /* z-index: 1; */
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.hero {
+  display: flex;
+}
+
+.explore {
+  font-family: "fraunces";
+}
+
+.paragragh {
+  font-size: 18px;
+  width: 50%;
+  color: #777;
+  font-family: outfit, sans-serif;
 }
