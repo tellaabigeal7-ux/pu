@@ -196,3 +196,48 @@ li a {
   opacity: 0.5;
   font-weight: 600;
 }
+
+.btn-con {
+  align-items: center;
+  display: flex;
+  margin-block: 30px;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.startbtn {
+  background-color: rgb(0, 200, 114);
+  border-radius: 60px;
+  padding: 1rem;
+  position: relative;
+  gap: 10px;
+  display: flex;
+  color: white;
+  /* width: 160px; */
+  cursor: pointer;
+  /* margin-top: 2rem; */
+  font-size: 17px;
+  border: none;
+}
+
+.start-stroke {
+  align-content: center;
+  /* padding-inline: 10px; */
+  gap: 10px;
+  display: flex;
+}
+
+.btn-get {
+  display: flex;
+  align-content: center;
+}
+
+.learnbtn {
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  padding: 1rem;
+  font-size: 17px;
+  border-radius: 60px;
+  border: 1px solid rgb(221, 216, 216);
+}
