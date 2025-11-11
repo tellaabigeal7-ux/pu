@@ -170,4 +170,6 @@ li a {
 .hub {
   margin-inline: 200px;
   background-color: firebrick;
+  margin-top: 800px;
+  color: #000;
 }
