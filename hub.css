@@ -410,6 +410,37 @@ li a {
   }
 }
 
+.center {
+  display: flex;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  justify-content: space-around;
+}
+
+.centerhead {
+  font-size: 60px;
+  word-break: break-all;
+  word-wrap: break-word;
+}
+
+.btn-centers {
+  background-color: rgb(104, 118, 209);
+  border: 1px solid black;
+  padding: 2rem;
+  font-size: 17px;
+  font-weight: 600;
+  color: white;
+  border-radius: 50px;
+  padding-inline: 60px;
+}
+
+.btn-arrow {
+  border-radius: 50%;
+  padding: 1.6rem;
+  border: 1px solid #e5e2e2;
+  background-color: transparent;
+}
+
 /* .steps {
   background-color: rgb(104, 118, 209);
   height: 50pc;
