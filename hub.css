@@ -97,14 +97,14 @@
   color: white;
 }
 
-li {
+.li {
   list-style-type: none;
   font-size: 20px;
   font-weight: 350;
   display: inline-block;
 }
 
-li a {
+.li a {
   text-decoration: none;
   color: black;
 }
@@ -250,7 +250,7 @@ li a {
   height: auto;
   flex-shrink: 0;
   position: relative;
-  display: block;
+  display: flex;
   width: 162.824px;
   margin-right: 20px;
 }
@@ -414,38 +414,64 @@ li a {
 }
 
 .slides {
-  display: flex;
+  color: black;
+  position: absolute;
+  line-height: 49px;
+  position: sticky;
+  padding: 2rem;
+  font-size: 25px;
+  animation: sli 12s infinite;
+}
+
+.slides ol {
+  list-style: none;
+  height: 3.8rem;
+  overflow: hidden;
+}
+
+.slides ol .lists .spans {
+  font-weight: 600;
+  -webkit-text-fill-color: transparent;
+  background: linear-gradient(20deg, cyan, magenta);
+  -webkit-background-clip: text;
 }
 
 .header {
   font-size: 40px;
 }
 
-.sli {
-  animation: 5s ease-in-out 1s 2 normal forwards sli;
-  overflow: hidden;
-  font-size: 40px;
-  white-space: wrap;
-}
-
 @keyframes sli {
-  0% {
-    transform: translateX(0);
+  0%,
+  10% {
+    transform: translateY(0%);
   }
-  33% {
-    transform: translateY(0);
+  15%,
+  25% {
+    transform: translateY(-100%);
   }
-
-  66% {
-    transform: translateY(-200px);
+  30%,
+  40% {
+    transform: translateY(-200%);
   }
+  45%,
+  55% {
+    transform: translateY(-300%);
+  }
+  60%,
+  70% {
+    transform: translateY(-400%);
+  }
+  75%,
+  85% {
+    transform: translateY(-500%);
+  }
+  90%,
   100% {
-    transform: translateX(0);
+    transform: translateY(-600%);
   }
 }
 
 .center {
-  display: flex;
   /* justify-content: space-around; */
   padding: 40px;
 }
@@ -512,30 +538,6 @@ li a {
 .wrapper {
   display: grid;
 }
-
-/* .swipe-slide {
-  display: flex;
-} */
-
-/* .slider {
-  background-color: white;
-  border-radius: 50px;
-} */
-
-/* .steps {
-  background-color: rgb(104, 118, 209);
-  height: 50pc;
-  margin-top: 70px;
-}
-
-.step-head {
-  color: white;
-}
-
-.list {
-  padding: 2em;
-}
-*/
 
 .last-footer {
   display: block;
