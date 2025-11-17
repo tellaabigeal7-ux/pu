@@ -251,8 +251,18 @@
   flex-shrink: 0;
   position: relative;
   display: flex;
-  width: 162.824px;
-  margin-right: 20px;
+  justify-content: space-around;
+  overflow: hidden;
+  gap: 40px;
+  padding: 30px;
+  margin-inline: 40px;
+}
+
+.slider {
+  background-color: white;
+  border-radius: 10px;
+  padding-block: 15px;
+  padding-inline: 15px;
 }
 
 @keyframes slide {
@@ -292,37 +302,53 @@
   font-family: outfit, sans-serif;
 }
 
-.hsa-tags {
+.two {
+  margin-left: 100px;
+}
+.join-container {
+  margin-top: 30px;
+  background-color: rgb(104, 118, 209);
+  color: white;
+}
+
+.join-tags {
   display: grid;
   margin-left: 0.8rem;
   gap: 20px;
   margin-block: 20px;
 }
 
-.hsa-wallet {
+.join-heading {
+  font-size: 48px;
+  margin-bottom: 1rem;
+}
+
+.join_para {
+  font-size: 20px;
+  font-family: outfit, sans-serif;
+  margin-block: 2rem;
+}
+
+.join-wallet {
   display: flex;
   align-items: start;
 }
 
-.wallet-content {
+.join-content {
   margin-left: 1.2rem;
 }
-.wallet-head {
+.join-head {
   font-size: 19px;
-  opacity: 0.8;
 }
-.wallet-head2 {
+.join-head2 {
   font-size: 19px;
   font-family: outfit, sans-serif;
-  opacity: 0.8;
 }
 
-.wallet-para {
-  color: #000;
-  font-size: 18px;
-  opacity: 0.6;
+.join-para {
+  color: #fff;
+  font-size: 17px;
   font-family: outfit, sans-serif;
-  width: 80%;
 }
 
 .health-btn {
@@ -342,16 +368,22 @@
   position: relative;
   margin-block: 20px;
 }
-
-/* body {
-  background-color: #6a4c93; /* The purple background color 
-  font-family: sans-serif;
+.add-btn {
+  color: #000;
+  border: #fff;
+  padding: 0.95rem;
+  cursor: pointer;
+  font-size: 18px;
+  gap: 10px;
   display: flex;
+  margin-bottom: 200px;
+  width: 240px;
   justify-content: center;
-  align-items: center;
-  height: 100vh;
-  margin: 0;
-} */
+  flex-direction: row;
+  background-color: orange;
+  border-radius: 600px;
+  position: relative;
+}
 
 .easy-heading {
   font-size: 45px;
@@ -359,6 +391,9 @@
   width: 20%;
 }
 
+.stroke {
+  color: #000;
+}
 .easystep {
   display: flex;
   color: #fff;
@@ -537,6 +572,24 @@
 
 .wrapper {
   display: grid;
+}
+
+.open {
+  display: flex;
+  justify-content: space-around;
+}
+
+.open-btn {
+  background-color: #f044380f;
+  color: #f04438;
+  border-radius: 50px;
+  align-content: center;
+  align-items: center;
+  padding-inline: 12px;
+  padding-block: 2px;
+  font-size: 16px;
+  border: none;
+  font-family: outfit, sans-serif;
 }
 
 .last-footer {
