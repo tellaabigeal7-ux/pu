@@ -254,7 +254,8 @@
   justify-content: space-around;
   overflow: hidden;
   gap: 40px;
-  padding: 30px;
+  cursor: grab;
+  margin-bottom: 200px;
   margin-inline: 40px;
 }
 
@@ -263,6 +264,7 @@
   border-radius: 10px;
   padding-block: 15px;
   padding-inline: 15px;
+  cursor: pointer;
 }
 
 @keyframes slide {
@@ -304,6 +306,7 @@
   width: 90%;
   color: #777;
   font-family: outfit, sans-serif;
+  margin-block: 30px;
 }
 
 .join-container {
@@ -431,7 +434,6 @@
 }
 
 .container {
-  flex-direction: column;
   position: relative;
   background-color: rgb(126, 17, 235);
   height: 60pc;
@@ -442,27 +444,27 @@
   position: relative;
 }
 
-.transition-image{
+.faq-page {
+  padding: 40px;
+}
+.transition-image {
   position: absolute;
   top: 0px;
   opacity: 0;
-  transition: .4s;
-  transform-origin: 50%,50%;
+  transition: 0.4s;
   overflow: hidden;
   z-index: 2;
 }
 
-.my-animate{
- position: relative;
-display: flex;
+.my-animate {
+  position: relative;
+  display: flex;
 }
 
 .grid {
   padding-top: 52px;
   padding-left: 30px;
- 
 }
-
 
 .step {
   position: relative;
@@ -627,6 +629,7 @@ display: flex;
   border-radius: 50px;
   align-content: center;
   align-items: center;
+  cursor: pointer;
   padding-inline: 12px;
   padding-block: 2px;
   font-size: 16px;
@@ -644,7 +647,7 @@ display: flex;
 
 .testimonials {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(20px, 1fr));
   gap: 24px;
   padding: 40px;
   cursor: grab;
@@ -666,7 +669,7 @@ display: flex;
   animation-delay: 1.5s;
   overflow: hidden;
   white-space: wrap;
-  
+  max-width: 100%;
   animation-timing-function: 1s;
 }
 
@@ -722,7 +725,7 @@ display: flex;
   clip-path: path(
     "M0,40 Q60,0 120,20 T240,20 T360,20 T480,40 L480,100 L0,100 Z"
   );
-  * for bottom */
+  /* for bottom */
   /* clip-path: polygon(0 0, 100% 0, 100% 70%, 0% 100%); */
   /* for top */
   /* clip-path: polygon(0 20%, 100% 0, 100% 100%, 0% 100%); */
@@ -735,15 +738,16 @@ display: flex;
 .swiper-two {
   display: flex;
   cursor: grab;
+  overflow: hidden;
   gap: 30px;
+  backface-visibility: hidden;
+  padding-left: 120px;
   transition-duration: 0ms;
   animation: swipetwo 17s linear infinite;
   transition-delay: 2ms;
 }
 
-
-
-.accordion-item{
+.accordion-item {
   display: flex;
   justify-content: space-between;
   margin-block: 30px;
@@ -754,7 +758,7 @@ display: flex;
   background-color: #f8f8f8;
 }
 
-.ques-btn{
+.ques-btn {
   font-size: 19px;
   background-color: transparent;
 
@@ -763,22 +767,21 @@ display: flex;
   border: none;
 }
 
-.bor{
+.bor {
   border-radius: 500px;
   background-color: #fff;
- display: flex;
- flex-direction: row;
- padding: 10px;
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
 }
 
-.faq-page{
+.faq-page {
   text-align: center;
   font-size: 17px;
   font-weight: 550;
   font-family: outfit, sans-serif;
   opacity: 0.7;
 }
-
 
 .section-container {
   position: relative;
@@ -883,6 +886,7 @@ display: flex;
   gap: 5px;
   width: 50%;
 }
+
 last-p {
   position: relative;
 }
@@ -915,21 +919,23 @@ last-p {
   text-decoration: none;
   font-size: 0.9rem;
   font-weight: 500;
-    font-family: outfit, sans-serif;
+  font-family: outfit, sans-serif;
 }
 
-.foot-para{
+.foot-para {
   font-weight: 500;
   font-size: 19px;
   width: 92%;
-   color: #d7d7d7;
+  color: #d7d7d7;
   font-family: outfit, sans-serif;
 }
 
 .flex-foot {
   display: grid;
   padding-right: 4rem;
-  width: 150%;
+}
+.foot-para {
+  width: 95%;
 }
 
 .center-you {
@@ -993,8 +999,6 @@ last-p {
 .png-span {
   margin-left: 1rem;
 }
-
-
 
 .last-footer {
   display: block;
