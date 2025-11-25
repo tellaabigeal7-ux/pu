@@ -131,6 +131,8 @@
 .resource {
   background-color: transparent;
   border: none;
+  font-weight: 500;
+  font-size: 20px;
   display: flex;
   align-items: center;
 }
@@ -389,21 +391,19 @@
 }
 
 .health-btn {
-  color: #ffffff;
+  color: #000;
   border: #fff;
-  padding: 0.95rem;
+  padding: 0.9rem;
   cursor: pointer;
   background-color: rgb(104, 117, 201);
   font-size: 18px;
   gap: 10px;
-
   display: flex;
-  margin-bottom: 200px;
   align-content: center;
   flex-direction: row;
-  border-radius: 600px;
+  border-radius: 500px;
   position: relative;
-  margin-block: 20px;
+  margin-block: 50px;
 }
 
 .easy-heading {
@@ -434,7 +434,7 @@
 }
 
 .container {
-  position: relative;
+  position: relative;hg
   background-color: rgb(126, 17, 235);
   height: 60pc;
   opacity: 0.8;
@@ -447,6 +447,7 @@
 .faq-page {
   padding: 40px;
 }
+
 .transition-image {
   position: absolute;
   top: 0px;
