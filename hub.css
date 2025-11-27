@@ -434,14 +434,28 @@
 }
 
 .container {
-  position: relative;hg
+  position: relative;
   background-color: rgb(126, 17, 235);
   height: 60pc;
   opacity: 0.8;
   padding: 40px;
 }
+
 .animation {
   position: relative;
+  max-width: 20%;
+  display: flex;
+  animation: slidechange 7000ms linear infinite;
+  overflow: hidden;
+}
+
+@keyframes slidechange {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-100%, 0);
+  }
 }
 
 .faq-page {
