@@ -231,11 +231,13 @@
   margin-block: 10px;
   line-height: 30px;
 }
+
 .swiper {
   position: relative;
   display: flex;
   flex-flow: row;
 }
+
 .swiper-wrapper {
   cursor: grab;
   margin-top: 3rem;
@@ -277,6 +279,7 @@
     transform: translate(-100%, 0);
   }
 }
+
 .swiper {
   position: relative;
   overflow: hidden;
@@ -303,6 +306,7 @@
 .animate {
   display: flex;
 }
+
 .paragragh {
   font-size: 18px;
   width: 90%;
@@ -357,9 +361,11 @@
 .join-content {
   line-height: 22px;
 }
+
 .join-head {
   font-size: 19px;
 }
+
 .join-head2 {
   font-size: 18px;
   font-weight: 600;
@@ -415,6 +421,7 @@
 .stroke {
   color: #000;
 }
+
 .easystep {
   display: flex;
   color: #fff;
@@ -441,20 +448,26 @@
   padding: 40px;
 }
 
-.animation {
-  position: relative;
-  max-width: 20%;
-  display: flex;
-  animation: slidechange 7000ms linear infinite;
-  overflow: hidden;
+.animated-box {
+  width: 415px;
+  height: 850px;
+  animation-name: slideIn;
+  animation-duration: 2s;
+  animation-delay: 0.3ms;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
 }
 
-@keyframes slidechange {
+@keyframes slideIn {
   0% {
-    transform: translate(0, 0);
+    background-image: url(./clafiya/onboard10.png);
+  }
+  50% {
+    background-image: url(./clafiya/onboard11.png);
   }
   100% {
-    transform: translate(-100%, 0);
+    background-image: url(./clafiya/onboard12.png);
   }
 }
 
@@ -599,6 +612,20 @@
   width: 50%;
 }
 
+.hsa-tags {
+  gap: 100px;
+}
+
+.wallet-head2 {
+  font-family: outfit, sans-serif;
+}
+
+.hsa-wallet {
+  gap: 15px;
+  margin-block: 20px;
+  display: flex;
+}
+
 .btn-centers {
   background-color: rgb(104, 118, 209);
   border: 2px solid black;
@@ -679,23 +706,14 @@
   }
 }
 
-.card {
-  animation: scroll 1000ms linear infinite;
-  animation-delay: 1.5s;
-  overflow: hidden;
-  white-space: wrap;
-  max-width: 100%;
-  animation-timing-function: 1s;
-}
-
 .profile {
-  display: flex;
+  display: block;
   gap: 10px;
 }
 
 @keyframes swipetwo {
   0% {
-    transform: translateX(-600px) translate3d(-230px);
+    transform: translateX(-600px) translate3d(-341.429px);
   }
   100% {
     transform: translateX(-100px);
@@ -706,13 +724,44 @@
   background: #fff;
   border-radius: 16px;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
-  padding: 24px;
-  display: flex;
   flex-direction: column;
-  justify-content: space-between;
   position: relative;
+  width: 100%;
+  justify-content: space-between;
   overflow: hidden;
-  clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+  clip-path: polygon(0 0%, 100% 0, 100% 90%, 0 95%);
+  animation: scroll 1000ms linear infinite;
+  animation-delay: 1.5s;
+  transition-delay: 0ms;
+  display: block;
+  /* max-width: 200%; */
+  animation-timing-function: 1s;
+}
+
+.swiper-two {
+  display: flex;
+  cursor: grab;
+  overflow: visible;
+  justify-content: space-around;
+  align-content: center;
+  margin-right: 30px;
+  gap: 30px;
+  backface-visibility: hidden;
+  flex-direction: row;
+  padding: 30px;
+  /* padding-left: 120px; */
+  position: relative;
+
+  transition-duration: 0ms;
+  animation: swipetwo 17s linear infinite;
+  transition-delay: 2ms;
+}
+
+.article {
+  display: flex;
+  position: relative;
+  gap: 70px;
+  width: 100%;
 }
 
 .card p {
@@ -749,18 +798,6 @@
 /* .image-con{
     z-index: 3;
 } */
-
-.swiper-two {
-  display: flex;
-  cursor: grab;
-  overflow: hidden;
-  gap: 30px;
-  backface-visibility: hidden;
-  padding-left: 120px;
-  transition-duration: 0ms;
-  animation: swipetwo 17s linear infinite;
-  transition-delay: 2ms;
-}
 
 .accordion-item {
   display: flex;
@@ -949,6 +986,7 @@ last-p {
   display: grid;
   padding-right: 4rem;
 }
+
 .foot-para {
   width: 95%;
 }
@@ -1043,4 +1081,166 @@ last-p {
   to {
     transform: scale(1.3);
   }
+}
+
+/* Hide the default checkbox */
+input[type="checkbox"] {
+  display: none;
+}
+
+/* Style the header (label) */
+.accordion-header {
+  padding: 20px 40px 20px 15px; /* Add padding for the icon on the right */
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  margin-block: 30px;
+  padding: 20px;
+  margin-inline: 50px;
+  cursor: pointer;
+  border-radius: 10px;
+  background-color: #f8f8f8;
+  position: relative; /* Required for absolute positioning of the icon */
+}
+
+.close {
+  font-family: oufit, sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  width: 90%;
+}
+
+.min {
+  background-color: #f1fcf8;
+  border: 2px solid rgb(0, 200, 114);
+  border-radius: 20px;
+  height: 130px;
+  padding: 15px;
+}
+
+/* Add the plus sign (+) using a pseudo-element */
+.accordion-header::after {
+  content: "+";
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 25px;
+  font-weight: 400;
+  border-radius: 500px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: row;
+  padding: 8px;
+  padding-inline: 15px;
+  transition: transform 0.3s ease-out; /* Optional: adds a smooth change */
+}
+
+/* Style the content area (hidden by default) */
+.accordion-content {
+  padding: 0 15px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out, padding 0.3s ease-out; /* Smooth slide transition */
+  background: #fff;
+}
+
+.accordion-content1 {
+  padding: 0 15px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out, padding 0.3s ease-out; /* Smooth slide transition */
+  background: #fff;
+}
+
+.accordion-content2 {
+  padding: 0 15px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out, padding 0.3s ease-out; /* Smooth slide transition */
+  background: #fff;
+}
+
+.accordion-content3 {
+  padding: 0 15px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out, padding 0.3s ease-out; /* Smooth slide transition */
+  background: #fff;
+}
+
+.accordion-content4 {
+  padding: 0 15px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out, padding 0.3s ease-out; /* Smooth slide transition */
+  background: #fff;
+}
+
+.accordion-content5 {
+  padding: 0 15px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out, padding 0.3s ease-out; /* Smooth slide transition */
+  background: #fff;
+}
+
+/* When the checkbox is checked, show the content */
+input[type="checkbox"]:checked + .accordion-header + .accordion-content {
+  max-height: 500px; /* A value larger than the content's height */
+}
+
+/* When the checkbox is checked, change the plus sign to a minus sign (-) */
+input[type="checkbox"]:checked + .accordion-header::after {
+  content: "-";
+}
+
+/* When the checkbox is checked, show the content */
+input[type="checkbox"]:checked + .accordion-header + .accordion-content1 {
+  max-height: 500px; /* A value larger than the content's height */
+}
+
+/* When the checkbox is checked, change the plus sign to a minus sign (-) */
+input[type="checkbox"]:checked + .accordion-header::after {
+  content: "-";
+}
+
+/* When the checkbox is checked, show the content */
+input[type="checkbox"]:checked + .accordion-header + .accordion-content2 {
+  max-height: 500px; /* A value larger than the content's height */
+}
+
+/* When the checkbox is checked, change the plus sign to a minus sign (-) */
+input[type="checkbox"]:checked + .accordion-header::after {
+  content: "-";
+}
+
+/* When the checkbox is checked, show the content */
+input[type="checkbox"]:checked + .accordion-header + .accordion-content3 {
+  max-height: 500px; /* A value larger than the content's height */
+}
+
+/* When the checkbox is checked, change the plus sign to a minus sign (-) */
+input[type="checkbox"]:checked + .accordion-header::after {
+  content: "-";
+}
+
+/* When the checkbox is checked, show the content */
+input[type="checkbox"]:checked + .accordion-header + .accordion-content4 {
+  max-height: 500px; /* A value larger than the content's height */
+}
+
+/* When the checkbox is checked, change the plus sign to a minus sign (-) */
+input[type="checkbox"]:checked + .accordion-header::after {
+  content: "-";
+}
+
+/* When the checkbox is checked, show the content */
+input[type="checkbox"]:checked + .accordion-header + .accordion-content5 {
+  max-height: 500px; /* A value larger than the content's height */
+}
+
+/* When the checkbox is checked, change the plus sign to a minus sign (-) */
+input[type="checkbox"]:checked + .accordion-header::after {
+  content: "-";
 }
