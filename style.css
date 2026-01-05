@@ -997,6 +997,8 @@ li a {
   background-image: url("../HTML/clafiya/Heading\ \(1\).png");
 }
 
+/* Testimonials compoenent */
+
 .testimonial-heading {
   display: flex;
   gap: 20px;
@@ -1024,15 +1026,6 @@ li a {
   }
 }
 
-.card {
-  width: 431px;
-  animation: scroll 1000ms linear infinite;
-  animation-delay: 1.5s;
-  overflow: hidden;
-  white-space: wrap;
-  animation-timing-function: 1s;
-}
-
 .profile {
   display: flex;
   gap: 10px;
@@ -1055,7 +1048,14 @@ li a {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  clip-path: polygon(0 0, 100%, 100% 90%, 0 100%);
+  /* clip-path: polygon(0 0, 100%, 100% 90%, 0 100%); */
+  width: 431px;
+  animation: scroll 1000ms linear infinite;
+  animation-delay: 1.5s;
+  overflow: hidden;
+  white-space: wrap;
+  animation-timing-function: 1s;
+  clip-path: polygon(0 0, 100% 0, 100% 93%, 0% 100%);
 }
 
 .card p {
@@ -1084,7 +1084,6 @@ li a {
     "M0,40 Q60,0 120,20 T240,20 T360,20 T480,40 L480,100 L0,100 Z"
   );
   /* for bottom */
-  /* clip-path: polygon(0 0, 100% 0, 100% 70%, 0% 100%); */
   /* for top */
   /* clip-path: polygon(0 20%, 100% 0, 100% 100%, 0% 100%); */
 }

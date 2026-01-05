@@ -689,7 +689,7 @@
 
 .testimonials {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(20px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 24px;
   padding: 40px;
   cursor: grab;
@@ -707,13 +707,13 @@
 }
 
 .profile {
-  display: block;
+  display: flex;
   gap: 10px;
 }
 
 @keyframes swipetwo {
   0% {
-    transform: translateX(-600px) translate3d(-341.429px);
+    transform: translateX(-600px) translate3d(-230px);
   }
   100% {
     transform: translateX(-100px);
@@ -724,44 +724,18 @@
   background: #fff;
   border-radius: 16px;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  padding: 24px;
+  display: flex;
   flex-direction: column;
-  position: relative;
-  width: 100%;
   justify-content: space-between;
-  overflow: hidden;
-  clip-path: polygon(0 0%, 100% 0, 100% 90%, 0 95%);
+  /* clip-path: polygon(0 0, 100%, 100% 90%, 0 100%); */
+  width: 431px;
   animation: scroll 1000ms linear infinite;
   animation-delay: 1.5s;
-  transition-delay: 0ms;
-  display: block;
-  /* max-width: 200%; */
+  overflow: hidden;
+  white-space: wrap;
   animation-timing-function: 1s;
-}
-
-.swiper-two {
-  display: flex;
-  cursor: grab;
-  overflow: visible;
-  justify-content: space-around;
-  align-content: center;
-  margin-right: 30px;
-  gap: 30px;
-  backface-visibility: hidden;
-  flex-direction: row;
-  padding: 30px;
-  /* padding-left: 120px; */
-  position: relative;
-
-  transition-duration: 0ms;
-  animation: swipetwo 17s linear infinite;
-  transition-delay: 2ms;
-}
-
-.article {
-  display: flex;
-  position: relative;
-  gap: 70px;
-  width: 100%;
+  clip-path: polygon(0 0, 100% 0, 100% 93%, 0% 100%);
 }
 
 .card p {
@@ -777,12 +751,12 @@
   left: 0;
   right: 0;
   bottom: 0;
-  height: 120px;
+  height: 100px;
   background: #e9d8fd; /* purple shade */
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 30px;
+  padding: 20px;
 
   /* 👇 This creates the slant */
   /* for top curves */
@@ -790,9 +764,21 @@
     "M0,40 Q60,0 120,20 T240,20 T360,20 T480,40 L480,100 L0,100 Z"
   );
   /* for bottom */
-  /* clip-path: polygon(0 0, 100% 0, 100% 70%, 0% 100%); */
   /* for top */
   /* clip-path: polygon(0 20%, 100% 0, 100% 100%, 0% 100%); */
+}
+
+/* .image-con{
+    z-index: 3;
+} */
+
+.swiper-two {
+  display: flex;
+  cursor: grab;
+  gap: 30px;
+  transition-duration: 0ms;
+  animation: swipetwo 17s linear infinite;
+  transition-delay: 2ms;
 }
 
 /* .image-con{
